@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using FishNet.Connection;
-using FishNet.Object;
 
-public class PlayerController : NetworkBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float speed;
     public float strafeSpeed;
@@ -25,29 +23,14 @@ public class PlayerController : NetworkBehaviour
     public Rigidbody rb;
     private bool isGrounded = false;
 
-    public override void OnStartClient()
-    { 
-        base.OnStartClient();
-        if(base.IsOwner){
-            rb = GetComponent<Rigidbody>();
-        }
- 
-        if (!base.IsOwner)
-        {
-            return;
-        }
-
-    }
-
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     
     private void FixedUpdate()
     {
-        if(base.IsOwner){
             if(Input.GetKey(KeyCode.W)){
                 rb.AddForce(rb.transform.forward * speed * 1.5f);
             }
@@ -68,14 +51,13 @@ public class PlayerController : NetworkBehaviour
                 rb.AddForce(new Vector3(0, -jumpForce, 0));
                 isGrounded = false;
             }
-        }
+        
     }
 
     private void OnCollisionEnter(Collision collision){
-        if(base.IsOwner){
             if (collision.gameObject.tag == "Floor"){
                isGrounded = true;
             }
-        }
+        
     }
 }
