@@ -1,14 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BringUpMenu : MonoBehaviour
 {
     public GameObject setting;
     public bool issettingactive;
+    public Slider slider;
 
     void Update()
     {
+
+        CamController.rotationSpeed = slider.value*10;
+
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             if (issettingactive == false)
@@ -27,6 +32,7 @@ public class BringUpMenu : MonoBehaviour
     {
         setting.SetActive(true);
         issettingactive = true;
+        Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
 
@@ -34,6 +40,7 @@ public class BringUpMenu : MonoBehaviour
     {
         setting.SetActive(false);
         issettingactive = false;
+        Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
 }

@@ -7,7 +7,7 @@ public class CamController : MonoBehaviour
 
     public Camera playerCamera;
     public GameObject balancer;
-    public float rotationSpeed = 30;
+    public static float rotationSpeed = 30;
 
     private float rotationX = 0;
     private float rotationY = 0;
