@@ -39,6 +39,14 @@ public class PlayerController : MonoBehaviour
                 rb.AddForce(-rb.transform.forward * speed);
             }
 
+            if(Input.GetKey(KeyCode.A)){
+                rb.AddForce(-rb.transform.right * strafeSpeed);
+            }
+
+            if(Input.GetKey(KeyCode.D)){
+                rb.AddForce(rb.transform.right * strafeSpeed);
+            }
+
             if(Input.GetAxis("Jump") > 0){
                 if(isGrounded){
                     rb.AddForce(new Vector3(0, jumpForce, 0));

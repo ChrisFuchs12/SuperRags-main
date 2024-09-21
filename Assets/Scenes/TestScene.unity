@@ -7359,7 +7359,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7627669024260368040}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.14, y: 1.32, z: 1.87}
+  m_LocalPosition: {x: -8.89, y: 1.32, z: -9.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7542,7 +7542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1000
-  strafeSpeed: 1
+  strafeSpeed: 1000
   jumpForce: 50000
   hips: {fileID: 7954636660998408850}
   leftUpLeg: {fileID: 5396592760908209842}
