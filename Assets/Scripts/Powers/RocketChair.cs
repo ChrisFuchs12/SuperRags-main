@@ -19,14 +19,14 @@ public class RocketChair : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.F)){
+        if(Input.GetKey(KeyCode.L)){
             jetPack.SetActive(true);
             canFire = true;
         }
 
         if(Input.GetMouseButton(0) && canFire == true){
             beam.SetActive(true);
-            rb.AddForce(-rb.transform.forward * knockback);
+            rb.AddForce(new Vector3(0,knockback,0));
         }
 
         if(Input.GetMouseButtonUp(0)){
