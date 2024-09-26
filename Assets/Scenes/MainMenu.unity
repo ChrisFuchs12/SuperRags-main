@@ -9470,6 +9470,7 @@ GameObject:
   - component: {fileID: 1589794038}
   - component: {fileID: 1589794037}
   - component: {fileID: 1589794036}
+  - component: {fileID: 1589794039}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -9541,7 +9542,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1589794037}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1589794039}
+        m_TargetAssemblyTypeName: SceneManager, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1589794037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9580,6 +9593,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589794034}
   m_CullTransparentMesh: 1
+--- !u!114 &1589794039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589794034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae76b1eaff9141f087720624695d469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1594014451 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2403657356467184440, guid: c7a90f8c07b3de24cab3cb5fb3d3f2ef, type: 3}
