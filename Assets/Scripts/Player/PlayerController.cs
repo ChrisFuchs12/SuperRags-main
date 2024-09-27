@@ -8,18 +8,6 @@ public class PlayerController : MonoBehaviour
     public float strafeSpeed;
     public float jumpForce;
 
-    public ConfigurableJoint hips;
-    public ConfigurableJoint leftUpLeg;
-    public ConfigurableJoint leftLeg;
-    public ConfigurableJoint rightUpLeg;
-    public ConfigurableJoint rightLeg;
-    public ConfigurableJoint spine1;
-    public ConfigurableJoint rightArm;
-    public ConfigurableJoint rightForeArm;
-    public ConfigurableJoint head;
-    public ConfigurableJoint leftArm;
-    public ConfigurableJoint leftForeArm;
-
     public Rigidbody rb;
     private bool isGrounded = false;
 

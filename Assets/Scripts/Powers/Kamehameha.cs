@@ -8,7 +8,7 @@ public class Kamehameha : MonoBehaviour
     public GameObject beam;
 
     public Rigidbody rb;
-    public float knockback = 100;
+    public float knockback = 1000f;
 
     private bool canFire = false;
 

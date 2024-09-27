@@ -5,7 +5,7 @@ using UnityEngine;
 public class LazerEyez : MonoBehaviour
 {
     public GameObject lazerEye;
-    public float knockback = 100;
+    public float knockback = 100f;
     public Rigidbody rb;
 
     void Start()

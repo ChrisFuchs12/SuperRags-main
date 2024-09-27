@@ -8,7 +8,7 @@ public class RocketChair : MonoBehaviour
     public GameObject beam;
 
     public Rigidbody rb;
-    public float knockback = 100;
+    public float knockback = 100f;
 
     private bool canFire = false;
 
