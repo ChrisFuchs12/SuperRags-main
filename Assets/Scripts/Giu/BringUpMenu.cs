@@ -12,7 +12,7 @@ public class BringUpMenu : MonoBehaviour
     void Update()
     {
 
-        CamController.rotationSpeed = slider.value*10;
+        CamController.rotationSpeed = slider.value*2;
 
         if (Input.GetKeyDown(KeyCode.Tab))
         {
