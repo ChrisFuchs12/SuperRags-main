@@ -610,7 +610,7 @@ MonoBehaviour:
   jetPack: {fileID: 403288982}
   beam: {fileID: 1658057659}
   rb: {fileID: 7954636660998408848}
-  knockback: 100
+  knockback: 10000
 --- !u!1 &403288982
 GameObject:
   m_ObjectHideFlags: 0
@@ -3372,7 +3372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lazerEye: {fileID: 443816047002247789}
-  knockback: 20
+  knockback: 200
   rb: {fileID: 3496940601311011213}
 --- !u!4 &443816045388001083
 Transform:
@@ -3609,7 +3609,7 @@ MonoBehaviour:
   circleBit: {fileID: 443816046464557121}
   beam: {fileID: 443816046823702454}
   rb: {fileID: 7954636660998408848}
-  knockback: 1000
+  knockback: 10000
 --- !u!4 &443816045430161199
 Transform:
   m_ObjectHideFlags: 0
@@ -8509,17 +8509,6 @@ MonoBehaviour:
   speed: 1000
   strafeSpeed: 1000
   jumpForce: 50000
-  hips: {fileID: 7954636660998408850}
-  leftUpLeg: {fileID: 5396592760908209842}
-  leftLeg: {fileID: 5421210533057025687}
-  rightUpLeg: {fileID: 3768190971334877228}
-  rightLeg: {fileID: 3270546483729324637}
-  spine1: {fileID: 8200533117376935067}
-  rightArm: {fileID: 7169353486246188761}
-  rightForeArm: {fileID: 4824152965743944143}
-  head: {fileID: 3496940601311011215}
-  leftArm: {fileID: 3547749641851602879}
-  leftForeArm: {fileID: 6317677972277330412}
   rb: {fileID: 7954636660998408848}
 --- !u!114 &7954636660998408877
 MonoBehaviour:
